@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#one {
+    background-image: url(https://skins.minimog.co/cdn/shop/files/camping_hero.jpg?v=1659941685&width=1780);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    color: black;
+    margin-top: 0px;
+}
+
+.mainnav li i {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.mainnav li ul {
+    display: flex;
+}
+
+.mainnav li ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+.mainnav #accounts a {
+    color: black;
+    display: block;
+}
+
+.mainnav #cart a {
+    color: black;
+}
+#pay{
+    display:grid;
+    grid-template-columns: auto auto ;
+    justify-content: space-evenly;
+}
+#pay #login{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+#hj{
+    border: 2px solid rgb(67, 134, 223);
+    width: 450px;
+    padding: 20px 75px 20px 75px;
+    background-color: rgb(67, 134, 223);
+    color: white;
+}
+#hj:hover{
+    scale: 1.1;
+    transition: all 1s;
+}
+@media(max-width:768px){
+    #pay{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #login{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,192 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+#first {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 25px 0px;
+    background-color: rgb(207, 206, 204);
+}
+
+#cool-admin {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+#cool-admin div {
+    margin: 20px;
+    align-items: center;
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgb(190, 188, 188);
+    align-items: center;
+    border-radius: 60px;
+    padding: 6px 15px;
+    display: flex;
+    position: relative;
+}
+
+#search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#search-bar i {
+    border: 0;
+    border-radius: 25px;
+    padding: 8px;
+    background: #58629b;
+    color: white;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: azure;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+#logo i {
+    margin: 20px;
+    color: rgb(14, 13, 13);
+}
+
+#img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#change {
+    display: flex;
+    align-items: center;
+}
+
+#change div {
+    margin: 10px;
+}
+
+#asid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div1 {
+    background-color: rgb(189, 183, 183);
+    padding: 50px 50px 50px 0;
+}
+
+#div1 aside {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+#div1 aside div {
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    margin: 10px;
+}
+
+#div1 aside:hover {
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+
+#centered-container div {
+    font-size: 32px; 
+}
+
+/* table css */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+}
+#centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns the table at the top */
+     height: auto; /*Remove fixed height to avoid extra space */
+    width: 150%;  
+    margin-top: 0; /* Ensure no top margin */
+    padding-top: 0; /* Remove padding */
+}
+
+table {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    margin-top: 0; /* Ensure no top margin */
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow-x: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 20px 23px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(66, 126, 154);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+td {
+    font-size: 13px;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+i {
+    cursor: pointer;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+i:hover {
+    color: #e74c3c;
+}
+

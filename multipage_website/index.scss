@@ -1,0 +1,705 @@
+* {
+    scroll-behavior: smooth;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+#one {
+    background-image: url(https://skins.minimog.co/cdn/shop/files/camping_hero.jpg?v=1659941685&width=1780);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+#pos {
+    i {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+    }
+
+    font-size: 24px;
+    border: 3px solid orangered;
+    width: 40px;
+    border-radius: 5px;
+    background-color: orangered;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    top: 250px;
+    right: 0px;
+    z-index: 12;
+}
+
+
+.mainnav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 210px;
+    overflow-x: hidden;
+
+    & li {
+
+
+        i {
+            font-size: 24px;
+            margin: 30px;
+
+
+        }
+
+        ul {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            li {
+
+                margin: 20px;
+                list-style-type: none;
+            }
+
+            display: flex;
+        }
+
+
+    }
+
+
+
+
+
+
+}
+
+.mainnav li a {
+    color: white;
+}
+
+#button {
+    // @include button; for calll
+    border: 2px solid orangered;
+    width: 100px;
+    padding: 0px 13px 0px 13px;
+
+    background-color: orangered;
+    color: white;
+
+}
+
+#button:hover {
+    padding: 10px 10px 10px 10px;
+
+    transition: all 0.5s;
+
+}
+
+
+#bar {
+    font-size: 24px;
+    display: none;
+    position: absolute;
+    top: 7px;
+    z-index: 4;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1000px) {
+    #bar {
+        display: block;
+        color: rgb(232, 232, 64);
+    }
+
+    .mainnav li a {
+        color: black;
+    }
+
+    .mainnav {
+        display: block;
+        margin-left: -400px;
+    }
+
+    .mainnav li ul {
+        display: block;
+
+
+    }
+
+    .mainnav li img {
+        display: none;
+    }
+
+    .mainnav li a {
+        display: block;
+
+    }
+
+    .mainnav li ul li {
+        color: black;
+    }
+
+    #cha:checked~.mainnav {
+        margin-left: 0px;
+        transition: margin-left 1.5s;
+        background-color: white;
+        width: 40%;
+        height: 100%;
+        color: red;
+        z-index: 3;
+    }
+
+    #center {
+        position: absolute;
+        top: 300px;
+        right: 200px;
+    }
+
+}
+
+
+
+// ===========================logos==================================================================================================
+#logos {
+    display: flex;
+
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    border-bottom: 0.5px solid rgb(241, 232, 232);
+    overflow-x: hidden;
+
+
+}
+
+
+
+@media(max-width:1024px) {
+    #logos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+
+
+
+    }
+}
+
+@media(max-width:768px) {
+    #logos {
+        display: grid;
+        grid-template-columns: auto auto;
+
+
+
+
+    }
+}
+
+@media(max-width:425px) {
+    #logos {
+        display: grid;
+        grid-template-columns: auto;
+
+
+
+
+    }
+}
+
+// ==========================================images==================================================================================
+#image {
+    overflow-x: hidden;
+
+
+}
+
+#image {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#image1 #a {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=360');
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#image2 #b {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=360');
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#image3 #c {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/16.jpg?v=1659519832&width=360');
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#image1 #a:hover {
+    background-image: url(https://skins.minimog.co/cdn/shop/products/18c.jpg?v=1659520124&width=535);
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#image2 #b:hover {
+    background-image: url(https://skins.minimog.co/cdn/shop/products/17a.jpg?v=1659520008&width=535);
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+#image3 #c:hover {
+    background-image: url(https://skins.minimog.co/cdn/shop/products/16a.jpg?v=1659519833&width=535);
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#shop {
+
+    border: 2px solid rgb(156, 151, 151);
+    width: 100px;
+    padding: 10px 20px 10px 20px;
+}
+
+#shop:hover {
+    background-color: orangered;
+    scale: 1.1;
+    transition: all 0.5s;
+
+}
+
+@media(max-width:1217px) {
+    #image {
+        display: block;
+        margin-left: 30%;
+        margin-right: 25%;
+
+        #image1 {
+            margin-bottom: 20px;
+        }
+
+        #image2 {
+            margin-bottom: 20px;
+        }
+
+        #image3 {
+            margin-bottom: 20px;
+        }
+
+        #image1 #a {
+            background-image: url('https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=360');
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        #image2 #b {
+            background-image: url('https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=360');
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #image3 #c {
+            background-image: url('https://skins.minimog.co/cdn/shop/products/16.jpg?v=1659519832&width=360');
+            width: 500px;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+    }
+}
+
+// ==================================================hero2====================================================================
+#hero2 {
+    background-color: rgb(216, 234, 244);
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    padding: 100px 0px 100px 0px;
+
+
+}
+
+#logos2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+}
+
+#logos2 #p {
+
+    background-image: url('https://skins.minimog.co/cdn/shop/files/camping_collection_1b.png?v=1659943452');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#logos2 #q {
+
+    background-image: url('https://skins.minimog.co/cdn/shop/files/camping_collection_2b.png?v=1659943452');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+#logos2 #r {
+
+    background-image: url('https://skins.minimog.co/cdn/shop/files/camping_collection_3b.png?v=1659943452');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#logos2 #s {
+
+    background-image: url('https://skins.minimog.co/cdn/shop/files/camping_collection_4b.png?v=1659943452');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#logos2 #t {
+
+    background-image: url('https://skins.minimog.co/cdn/shop/files/camping_collection_5b.png?v=1659943452');
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#logos2 #p:hover {
+    scale: 1.1;
+    transition: all 1s;
+
+
+
+
+}
+
+#logos2 #q:hover {
+    scale: 1.1;
+    transition: all 1s;
+
+
+
+
+}
+
+#logos2 #r:hover {
+    scale: 1.1;
+    transition: all 1s;
+
+
+
+
+}
+
+#logos2 #s:hover {
+    scale: 1.1;
+    transition: all 1s;
+
+
+
+
+}
+
+#logos2 #t:hover {
+    scale: 1.1;
+    transition: all 1s;
+
+
+
+
+}
+
+@media(max-width:1024px) {
+    #logos2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
+
+
+
+
+
+// =============================================hero3=============================================================================
+#hero3 {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+
+}
+
+#cd {
+    border: 2px solid orangered;
+    padding: 20px 10px 20px 10px;
+    background-color: orangered;
+    color: white;
+}
+
+#cd:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+@media(max-width:1024px) {
+    #hero3 {
+        display: block;
+        justify-content: center;
+        margin-left: 17%;
+        margin-right: 10%;
+
+
+
+
+    }
+}
+
+// ==================================================products======================================================================
+#products {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+
+}
+
+#product1 {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/7_d87333d2-c974-48f9-a9b4-58b1a63098af.jpg?v=1659521472&width=360');
+    width: 350px;
+    height: 400px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+#product2 {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/6_e6a59e04-cd8e-4bf5-86f6-3ca99ea736e2.jpg?v=1659521425&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+#product3 {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/5_b7ae2b8d-cef6-42c1-9cd5-4e08336c8397.jpg?v=1659521376&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+#product4 {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/4_0546b8bb-1c58-43ec-9c45-7892f3cafc1a.jpg?v=1659521331&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#product1:hover {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/7a_de92a828-43f6-4914-b050-f88e61d6cac1.jpg?v=1659521476&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#product2:hover {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/6a_9f91395e-0023-4c83-b105-73356b72c445.jpg?v=1659521425&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+
+    background-repeat: no-repeat;
+}
+
+#product3:hover {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/5a_3bd8de0e-45b8-4715-a8d0-8dcf93a7f5ba.jpg?v=1659521377&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+
+    background-repeat: no-repeat;
+}
+
+#product4:hover {
+    background-image: url('https://skins.minimog.co/cdn/shop/products/4a_97e75852-c291-4732-88ce-fd5d2e13f574.jpg?v=1659521331&width=360');
+    width: 350px;
+
+    height: 400px;
+    background-size: cover;
+
+
+    background-repeat: no-repeat;
+}
+
+#button1 {
+    border: 2px solid rgb(156, 151, 151);
+    width: 100px;
+    padding: 20px 20px 20px 20px;
+}
+
+#button1:hover {
+    background-color: orangered;
+    scale: 1.1;
+    transition: 1s;
+}
+
+// =====================================================contacts========================================================================
+#contacts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: rgb(56, 55, 55);
+    padding-top: 100px;
+
+
+    overflow-x: hidden;
+
+
+    div {
+        input {
+            padding: 15px 100px 15px 20px;
+            border: none;
+            background-color: azure;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    #contacts {
+        display: grid;
+        grid-template-columns: auto auto;
+
+
+
+
+    }
+}
+
+// ================================================================last===============================================================
+#last {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    color: white;
+    background-color: rgb(56, 55, 55);
+    margin-top: 0px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    overflow-x: hidden;
+
+    @media(max-width:1024px) {
+        #last {
+            display: grid;
+            grid-template-columns: auto;
+
+
+
+
+        }
+    }
+
+}

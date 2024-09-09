@@ -1,0 +1,320 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+#one {
+  background-image: url(https://skins.minimog.co/cdn/shop/files/camping_hero.jpg?v=1659941685&width=1780);
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+}
+
+.mainnav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: center;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 210px;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+.mainnav li i {
+  font-size: 24px;
+  margin: 30px;
+}
+.mainnav li ul {
+  display: flex;
+}
+.mainnav li ul a {
+  color: white;
+  text-decoration: none;
+}
+.mainnav li ul li {
+  margin: 20px;
+  list-style-type: none;
+}
+
+#button {
+  border: 2px solid orangered;
+  width: 100px;
+  padding: 0px 13px 0px 13px;
+  background-color: orangered;
+  color: white;
+}
+
+#button:hover {
+  padding: 10px 10px 10px 10px;
+  transition: all 0.5s;
+}
+
+#logos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  border-bottom: 0.5px solid rgb(241, 232, 232);
+  overflow-x: hidden;
+}
+
+#logos #logo1 {
+  color: aqua;
+}
+
+@media (max-width: 1024px) {
+  #logos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) {
+  #logos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 425px) {
+  #logos {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+#image {
+  overflow-x: hidden;
+}
+
+#image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#image1 #a {
+  background-image: url("https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=360");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image2 #b {
+  background-image: url("https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=360");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image3 #c {
+  background-image: url("https://skins.minimog.co/cdn/shop/products/16.jpg?v=1659519832&width=360");
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image1 #a:hover {
+  background-image: url(https://skins.minimog.co/cdn/shop/products/18c.jpg?v=1659520124&width=535);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image2 #b:hover {
+  background-image: url(https://skins.minimog.co/cdn/shop/products/17a.jpg?v=1659520008&width=535);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#image3 #c:hover {
+  background-image: url(https://skins.minimog.co/cdn/shop/products/16a.jpg?v=1659519833&width=535);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#shop {
+  border: 2px solid rgb(156, 151, 151);
+  width: 100px;
+  padding: 10px 20px 10px 20px;
+}
+
+#shop:hover {
+  background-color: orangered;
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+@media (max-width: 1217px) {
+  #image {
+    display: block;
+    margin-left: 30%;
+    margin-right: 25%;
+  }
+  #image #image1 {
+    margin-bottom: 20px;
+  }
+  #image #image2 {
+    margin-bottom: 20px;
+  }
+  #image #image3 {
+    margin-bottom: 20px;
+  }
+  #image #image1 #a {
+    background-image: url("https://skins.minimog.co/cdn/shop/products/18b.jpg?v=1659520124&width=360");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #image #image2 #b {
+    background-image: url("https://skins.minimog.co/cdn/shop/products/17.jpg?v=1659520008&width=360");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #image #image3 #c {
+    background-image: url("https://skins.minimog.co/cdn/shop/products/16.jpg?v=1659519832&width=360");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+#hero2 {
+  padding: 100px 50px 100px 50px;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+}
+
+#logo2 #p {
+  background-image: url("https://skins.minimog.co/cdn/shop/files/camping_collection_1b.png?v=1659943452");
+  width: 100px;
+  height: 100px;
+}
+
+#logo2 #q {
+  background-image: url("https://skins.minimog.co/cdn/shop/files/camping_collection_2b.png?v=1659943452");
+  width: 100px;
+  height: 100px;
+}
+
+#logo2 #r {
+  background-image: url("https://skins.minimog.co/cdn/shop/files/camping_collection_3b.png?v=1659943452");
+  width: 100px;
+  height: 100px;
+}
+
+#logo2 #s {
+  background-image: url("https://skins.minimog.co/cdn/shop/files/camping_collection_4b.png?v=1659943452");
+  width: 100px;
+  height: 100px;
+}
+
+#logo2 #t {
+  background-image: url("https://skins.minimog.co/cdn/shop/files/camping_collection_5b.png?v=1659943452");
+  width: 100px;
+  height: 100px;
+}
+
+#hero3 {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+}
+
+#cd {
+  border: 2px solid orangered;
+  padding: 20px 10px 20px 10px;
+  background-color: orangered;
+  color: white;
+}
+
+#cd:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  #hero3 {
+    display: block;
+    justify-content: center;
+    margin-left: 17%;
+    margin-right: 10%;
+  }
+}
+#products {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+
+#button1 {
+  border: 2px solid rgb(156, 151, 151);
+  width: 100px;
+  padding: 20px 20px 20px 20px;
+}
+
+#button1:hover {
+  background-color: orangered;
+  scale: 1.1;
+  transition: 1s;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgb(56, 55, 55);
+  padding-top: 100px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+#contacts div input {
+  padding: 15px 100px 15px 20px;
+  border: none;
+  background-color: azure;
+}
+
+#last {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background-color: rgb(56, 55, 55);
+  margin-top: 0px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+#hello {
+  background-image: url(https://skins.minimog.co/cdn/shop/products/7_d87333d2-c974-48f9-a9b4-58b1a63098af.jpg?v=1659521472&width=360);
+  width: 500px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hello:hover {
+  background-image: url(https://skins.minimog.co/cdn/shop/products/18c.jpg?v=1659520124&width=535);
+}
+
+/*# sourceMappingURL=indexcss.map */

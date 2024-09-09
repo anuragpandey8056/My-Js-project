@@ -1,0 +1,46 @@
+{
+  "registration": [
+    {
+      "id": "4",
+      "name": "Kamlesh",
+      "Email": "kamlesh@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "60cb",
+      "name": "sharbh",
+      "Email": "saurav@gamil.com",
+      "password": "9979"
+    },
+    {
+      "id": "6bb0",
+      "name": "aurag",
+      "Email": "anuragpandey8056@gmail.com",
+      "password": "7852"
+    },
+    {
+      "id": "2f85",
+      "name": "nitin",
+      "Email": "nitin@gmail.com",
+      "password": "6260"
+    },
+    {
+      "id": "0ebe",
+      "name": "kamlesh",
+      "Email": "kamlesh@gmail.com",
+      "password": "2589"
+    },
+    {
+      "id": "96b6",
+      "name": "akshat",
+      "Email": "akshat@gmail.com",
+      "password": "2589"
+    },
+    {
+      "id": "b54e",
+      "name": "divyanshu singh chauhan",
+      "Email": "divyanshu@gamil.com",
+      "password": "22558"
+    }
+  ]
+}
