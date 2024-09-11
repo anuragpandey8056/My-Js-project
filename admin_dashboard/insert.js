@@ -9,17 +9,17 @@ async function insert(e) {
             alert("all fields are complusary to fill")
             document.getElementById("name").focus()
             }
-        else if (!email.match(/@/)){
-            window.alert("plaase fill @ your email");
-            document.querySelector("#email").focus();
-            return false;
-        }
+        // else if (!email.match(/@/)){
+        //     window.alert("plaase fill @ your email");
+        //     document.querySelector("#email").focus();
     
-        else if (!(email.includes("@gmail.com") || email.includes("@yahoo.com"))){
-            window.alert("plaase fill @gmail email");
-            document.querySelector("#email").focus();
-            return false;
-        }
+        // }
+    
+        // else if (!(email.includes("@gmail.com") || email.includes("@yahoo.com"))){
+        //     window.alert("plaase fill @gmail email");
+        //     document.querySelector("#email").focus();
+            
+        // }
         else{
             let url = ("http://localhost:3000/registration");
 

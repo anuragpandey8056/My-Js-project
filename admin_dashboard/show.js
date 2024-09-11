@@ -8,7 +8,39 @@ function editRow(id) {
     document.getElementById(`save-${id}`).style.display = "inline";
 }
 
-
+function saveRow(id){
+    let myid = document.getElementById(`id-${id}`).value;
+    let myname = document.getElementById(`nm-${id}`).value;
+    let myemail = document.getElementById(`email-${id}`).value;
+    let mypassword = document.getElementById(`password-${id}`).value;
+  
+    let url = `http://localhost:3000/registration/${id}`;
+    fetch(url,{
+      method:"PUT",
+      body:JSON.stringify({
+        id:myid,
+        name:myname,
+        email:myemail,
+        password:mypassword
+      }),
+      headers:{
+        "Content-type":"application/json;charset=utf-8",
+      }
+  
+    })
+    .then((response)=>{
+      console.log(response.ok)
+      if(response.ok){
+        alert("data updated succedfully")
+        // dataShow();
+      }else{
+        throw new Error("error while updating")
+      }
+    })
+    .catch((error)=>{
+      console.log(error);
+    })
+  }
 
 
 
@@ -28,16 +60,25 @@ function myrecordRemove(id) {
 
     fetch(url, {
         method: "DELETE",
-    });
-    alert("record deleted");
-    // .then((data) => {
-    //   console.log(data);
-    //   return data.json();
-    // })
-    // .then((y) => {
-    //   console.log(y);
-    //   alert("Record deleted successfully");
-    // });
+    })
+//     .then((response)=>{
+//         if(response.ok){
+//         alert("record deleted");
+//         show();
+//         }
+//          else{
+//    throw new Error('eror')
+// }})
+   
+//     .then((data) => {
+//       console.log(data);
+//       return data.json();
+//     })
+//     .then((y) => {
+//       console.log(y);
+//       alert("Record deleted successfully");
+//       show()
+//     });
 }
 
 

@@ -11,6 +11,7 @@
     align-items: center;
     box-shadow: 0px 0px 25px 0px;
     background-color: rgb(207, 206, 204);
+    overflow-x: hidden;
 }
 
 #cool-admin {
@@ -92,11 +93,13 @@
 #asid {
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 #div1 {
     background-color: rgb(189, 183, 183);
-    padding: 50px 50px 50px 0;
+    padding: 50px 25px 50px 0;
+    margin-right: 0px;
 }
 
 #div1 aside {
@@ -128,6 +131,59 @@
     font-size: 32px; 
 }
 
+#div2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px
+
+
+}
+
+#div2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card1, #card2, #card3, #card4 {
+    width: 250px;
+    height: 300px;
+    border: 2px solid rgb(114, 114, 154);
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+#card1{
+    
+    background-image: linear-gradient(rgb(235, 106, 190),rgb(59, 77, 194));
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* table css */
 
 h1 {
@@ -136,6 +192,7 @@ h1 {
     color: #444;
 }
 #centered-container {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Aligns the table at the top */
@@ -188,5 +245,107 @@ i {
 
 i:hover {
     color: #e74c3c;
+}
+
+/* ============================================responsive========================================== */
+@media (max-width: 1024px) {
+    #logo {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 15px;
+    }
+
+    #card1, #card2, #card3, #card4 {
+        width: 180px;
+        height: 350px;
+    }
+
+    #div1 {
+        padding-right: 20px;
+    }
+
+    table {
+        width: fit-content;
+    }
+
+    #change h2 {
+        font-size: 18px;
+    }
+
+    #change h3 {
+        font-size: 14px;
+    }
+
+    #container {
+        margin: 10px 0;
+    }
+
+    #div2 {
+        justify-content: space-between;
+    }
+}
+
+/* Small Screens and Phones */
+@media (max-width: 768px) {
+    #div2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #card1, #card2, #card3, #card4 {
+        width: 100%;
+        height: auto;
+    }
+
+    #logo i {
+        font-size: 18px;
+    }
+
+    #search-bar {
+        max-width: 90%;
+    }
+
+    #img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #change h2 {
+        font-size: 16px;
+    }
+
+    #change h3 {
+        font-size: 12px;
+    }
+
+    #div1 {
+        padding-left: 10px;
+    }
+
+    table {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    #search-bar input {
+        font-size: 14px;
+    }
+
+    #logo i {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    #card1, #card2, #card3, #card4 {
+        padding: 10px;
+    }
+
+    #div1 {
+        padding-right: 5px;
+    }
 }
 
