@@ -1,16 +1,10 @@
 {
   "registration": [
     {
-      "id": "ed81"
-    },
-    {
       "id": "e645",
       "name": "nitin",
       "Email": "nitin@gmail.com",
       "password": "7856"
-    },
-    {
-      "id": "7021"
     },
     {
       "id": "71b1",
@@ -20,9 +14,15 @@
     },
     {
       "id": "5863",
-      "name": "piyush",
-      "Email": "piyush@gmail.com",
-      "password": "5896"
+      "name": "shivam",
+      "Email": "piyus@gmail.com",
+      "password": "589645"
+    },
+    {
+      "id": "371a",
+      "name": "anuragpandey",
+      "Email": "anurag@gmail.com",
+      "password": "1488"
     }
   ]
 }

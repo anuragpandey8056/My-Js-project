@@ -1,142 +1,99 @@
-function editRow(id) {
-    document.getElementById(`id-${id}`).removeAttribute('readonly');
-    document.getElementById(`nm-${id}`).removeAttribute('readonly');
-    document.getElementById(`email-${id}`).removeAttribute('readonly');
-    document.getElementById(`password-${id}`).removeAttribute('readonly');
+async function show() {
+  let My_table = `<table border="1px" width="600px" align="center">
+      <tr style="background-color: rgb(66, 126, 154); color: white;">
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Edit</th>
+          <th>Delete/save</th>
+          
+      </tr>`;
 
-    document.getElementById(`edit-${id}`).style.display = "inline";
-    document.getElementById(`save-${id}`).style.display = "inline";
+  let Url = "http://localhost:3000/registration";
+  let myobj = await fetch(Url);
+  let mydata = await myobj.json();
+
+  mydata.forEach((key) => {
+      My_table += `<tr>
+          <td><input id="id-${key.id}" value="${key.id}" readonly></td>
+          <td><input id="nm-${key.id}" value="${key.name}" readonly></td>
+          <td><input id="email-${key.id}" value="${key.Email}" readonly></td>
+          <td><input id="password-${key.id}" value="${key.password}" readonly></td>
+          <td id="edit-${key.id}">
+              <i onclick="editRow('${key.id}')" class="fa-regular fa-pen-to-square"></i>
+          </td>
+          <td>
+              <i onclick="myrecordRemove('${key.id}')" class="fa-solid fa-delete-left"></i>
+          </td>
+          <td id="save-${key.id}" style="display:none;">
+              <i onclick="saveRow('${key.id}')" class="fa-solid fa-floppy-disk"></i>
+          </td>
+      </tr>`;
+  });
+
+  My_table += `</table>`;
+  document.getElementById("show").innerHTML = My_table;
 }
 
-function saveRow(id){
-    let myid = document.getElementById(`id-${id}`).value;
-    let myname = document.getElementById(`nm-${id}`).value;
-    let myemail = document.getElementById(`email-${id}`).value;
-    let mypassword = document.getElementById(`password-${id}`).value;
-  
-    let url = `http://localhost:3000/registration/${id}`;
-    fetch(url,{
-      method:"PUT",
-      body:JSON.stringify({
-        id:myid,
-        name:myname,
-        email:myemail,
-        password:mypassword
+function editRow(id) {
+  document.getElementById(`id-${id}`).removeAttribute('readonly');
+  document.getElementById(`nm-${id}`).removeAttribute('readonly');
+  document.getElementById(`email-${id}`).removeAttribute('readonly');
+  document.getElementById(`password-${id}`).removeAttribute('readonly');
+
+  document.getElementById(`edit-${id}`).style.display = "none"; // Hide edit button
+  document.getElementById(`save-${id}`).style.display = "inline"; // Show save button
+}
+
+function saveRow(id) {
+  let myid = document.getElementById(`id-${id}`).value;
+  let myname = document.getElementById(`nm-${id}`).value;
+  let myemail = document.getElementById(`email-${id}`).value;
+  let mypassword = document.getElementById(`password-${id}`).value;
+
+  let url = `http://localhost:3000/registration/${id}`;
+  fetch(url, {
+      method: "PUT",
+      body: JSON.stringify({
+          id: myid,
+          name: myname,
+          Email: myemail,
+          password: mypassword
       }),
-      headers:{
-        "Content-type":"application/json;charset=utf-8",
+      headers: {
+          "Content-type": "application/json;charset=utf-8",
       }
-  
-    })
-    .then((response)=>{
-      console.log(response.ok)
-      if(response.ok){
-        alert("data updated succedfully")
-        // dataShow();
-      }else{
-        throw new Error("error while updating")
-      }
-    })
-    .catch((error)=>{
-      console.log(error);
-    })
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+  })
+      .then((response) => {
+          if (response.ok) {
+              alert("Data updated successfully");
+              show(); // Refresh the table
+          } else {
+              throw new Error("Error while updating");
+          }
+      })
+      .catch((error) => {
+          console.log(error);
+      });
+}
 
 function myrecordRemove(id) {
-    let url = `http://localhost:3000/registration/${id}`;
-
-    fetch(url, {
-        method: "DELETE",
-    })
-//     .then((response)=>{
-//         if(response.ok){
-//         alert("record deleted");
-//         show();
-//         }
-//          else{
-//    throw new Error('eror')
-// }})
-   
-//     .then((data) => {
-//       console.log(data);
-//       return data.json();
-//     })
-//     .then((y) => {
-//       console.log(y);
-//       alert("Record deleted successfully");
-//       show()
-//     });
+  let url = `http://localhost:3000/registration/${id}`;
+  fetch(url, {
+      method: "DELETE",
+  })
+      .then((response) => {
+          if (response.ok) {
+              alert("Record deleted");
+              show(); // Refresh the table after deletion
+          } else {
+              throw new Error('Error');
+          }
+      })
+      .catch((error) => {
+          console.log(error);
+      });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-async function show() {
-    let My_table = `<table border = 1px width = "600px" align = "center">
-        <tr style="background-color: rgb(66, 126, 154); color: white;">
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>password</th>
-            <th>Edit</th>
-            <th>Delete</th>
-            <th>save</th>
-        
-
-        </tr>`;
-
-    let Url = "http://localhost:3000/registration";
-    let myobj = await fetch(Url);
-    let mydata = await myobj.json();
-
-    mydata.map((key) => {
-        My_table += `<tr>
-            <td id="id-${key.id}"> ${key.id}  </td>
-            <td id="nm-${key.id}"> ${key.name} </td>
-            <td  id="email-${key.id}">${key.Email} </td>
-            <td id="password-${key.id}">${key.password}  </td>
-            <td id="edit-${key.id}"><i   onclick="editRow('${key.id}')" class="fa-regular fa-pen-to-square"></i> </td>
-            <td><i  onclick="myrecordRemove('${key.id}')" class="fa-solid fa-delete-left"></i> </td>
-            <td id="save-${key.id}"><i  onclick="saveRow('${key.id}')"  class="fa-solid fa-floppy-disk"></i> </td>
-
-        </tr>`;
-    });
-
-    My_table += `</table>`;
-    let one = document.getElementById("show");
-    let two = document.getElementById("show1");
-
-    one.innerHTML = My_table;
-    two.innerHTML = My_table;
-
-}
-
-show()
+show(); // Initial call to show the data

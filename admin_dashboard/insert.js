@@ -1,5 +1,5 @@
 async function insert(e) {
-        // e.preventDefault();
+    
     try {
         let myname = document.getElementById("name").value;
         let myemail = document.getElementById("email").value;
@@ -9,17 +9,7 @@ async function insert(e) {
             alert("all fields are complusary to fill")
             document.getElementById("name").focus()
             }
-        // else if (!email.match(/@/)){
-        //     window.alert("plaase fill @ your email");
-        //     document.querySelector("#email").focus();
-    
-        // }
-    
-        // else if (!(email.includes("@gmail.com") || email.includes("@yahoo.com"))){
-        //     window.alert("plaase fill @gmail email");
-        //     document.querySelector("#email").focus();
-            
-        // }
+       
         else{
             let url = ("http://localhost:3000/registration");
 
@@ -50,3 +40,4 @@ async function insert(e) {
     
     
 }
+
