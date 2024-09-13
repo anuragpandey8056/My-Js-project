@@ -139,4 +139,4 @@ async function show() {
 
 }
 
-// show()
+show()

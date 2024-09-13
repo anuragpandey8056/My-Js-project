@@ -5,73 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./show.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-            color: #444;
-        }
-
-        table {
-            width: 80%;
-            margin: 40px auto;
-            border-collapse: collapse;
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        th, td {
-            padding: 12px 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: rgb(66, 126, 154);
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 14px;
-        }
-
-        td {
-            font-size: 13px;
-            color: #333;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        i {
-            cursor: pointer;
-            color: #3498db;
-            transition: color 0.3s ease;
-        }
-
-        i:hover {
-            color: #e74c3c;
-        }
-
-        
-       
+      
     </style>
 </head>
 
 <body>
-    <h1 id="show1">User Records</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+    
+    </style>
+    
+    <body>
+        <section id="first">
+            <aside id="cool-admin">
+                <div style="margin-inline-start: 0px;">
+                    <img src="https://static.wixstatic.com/media/a1ab38_6eb2692f1f58479d9df44379f981cce5~mv2.png/v1/fit/w_2500,h_1330,al_c/a1ab38_6eb2692f1f58479d9df44379f981cce5~mv2.png"
+                        width="40px" alt="">
+                </div>
+                <div style="font-size: 24px;"><b>CAMPING</b> WEB</div>
+            </aside>
+    
+            <div id="container">
+                <form id="search-bar">
+                    <input type="text" placeholder="Search anything" name="q">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+    
+            <div id="logo">
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+    
+            <div id="change" style="display: flex; align-items: center; margin-right: 10px;">
+                <div>
+                    <img id="img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGxx1DUJNuxRai0IV8G04TKWCpkcmRlkRhA&s"
+                        width="100%" alt="">
+                </div>
+                <div>
+                    <h2>Welcome</h2>
+                    <h3 style="color: rgb(116, 150, 150);" id="welcome"></h3>
+                </div>
+            </div>
+    
+            <div>
+                <i style="font-size: 20px;" class="fa-solid fa-list"></i>
+            </div>
+        </section>
+    
+        <section id="asid">
+            <div id="div1">
+                <aside>
+                    <div><i class="fa-solid fa-gauge"></i></div>
+                    <div><a href="./admin.html">admin</a></div>
+                </aside>
+                <aside>
+                    <div><i class="fa-solid fa-chart-simple"></i></div>
+                    <div><a href="">Charts</a></div>
+                </aside>
+                <aside>
+                    <div><i class="fa-solid fa-table"></i></div>
+    
+                    <div onclick="show()">Show</div>
+    
+                </aside>
+                <aside>
+                    <div><i class="fa-brands fa-wpforms"></i></div>
+                    <div>
+                        <a href="../multipage_website/Register.html">Login</a>
+                    </div>
+                </aside>
+                <aside>
+                    <div><i class="fa-regular fa-calendar-days"></i></div>
+                    <div> <a href="./insert.html">Insert-Data</a> </div>
+                </aside>
+                <aside>
+                    <div><i class="fa-solid fa-map"></i></div>
+                    <div><a href="">Maps</a></div>
+                </aside>
+                <aside>
+                    <div><i class="fa-solid fa-pager"></i></div>
+                    <div><a href="">Pages</a></div>
+                </aside>
+                <aside>
+                    <div><i class="fa-brands fa-uikit"></i></div>
+                    <div><a href="">UI Elements</a></div>
+                </aside>
+            </div>
+            
+            <div id="centered-container">
+                <h1 id="show"></h1>
+    
+            </div>
+           
+    
+    
+    
+    
+    
+    
+    
+        </section>
+    
+    
+        <!-- ====================================hero================================================= -->
+        <section>
+    
+    
+        </section>
+    
+        <script src="./show.js"></script>
+        <script src="./insert.js"></script>
+        <script src="./index.js"></script>
+    </body>
+    
+    </html>
     <script src="./show.js"></script>
 </body>
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -67,7 +68,7 @@
             <aside>
                 <div><i class="fa-solid fa-table"></i></div>
 
-                <div onclick="show()">Show</div>
+                <div><a href="./show.html">show</a></div>
 
             </aside>
             <aside>
@@ -93,49 +94,87 @@
                 <div><a href="">UI Elements</a></div>
             </aside>
         </div>
-
+        <!-- 
         <div id="centered-container">
             <h1 id="show"></h1>
 
-        </div>
-
-        <!-- <div id="div2">
-            <div id="card1">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div id="card2">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div id="card3">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div id="card4">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
         </div> -->
+        <section>
+            <div id="div2">
+                <div id="card1">
 
-       
+                    <div style="margin-right: 100px;"><i class="fa-solid fa-user"></i></div>
+                    <div style="margin-top: 30px; font-size: 48px; color: white;">10368</div>
+                    <div style="margin-top: 10px; color: white;">members online</div>
+                </div>
+                <div id="card2">
+                    <div style="margin-right: 100px;"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div style="margin-top: 30px; font-size: 48px; color: white;">388,688</div>
+                    <div style="margin-top: 10px; color: white;">item solid</div>
+                </div>
+                <div id="card3">
+                    <div style="margin-right: 70px;"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div style="margin-top: 20px; font-size: 48px; color: white;">1,086</div>
+                    <div style="margin-top: 10px; color: white;">this week</div>
+                </div>
+                <div id="card4">
+                    <div style="margin-right: 100px;"><i class="fa-solid fa-dollar-sign"></i></div>
+                    <div style="margin-top: 30px; font-size: 48px; color: white;">388,688</div>
+                    <div style="margin-top: 10px; color: white;">item solid</div>
+                </div>
+
+
+
+                <!-- Left chart card -->
+                <div class="card">
+                    <h3>Recent Reports</h3>
+                    <div class="legend">
+                        <span><span class="dot blue"></span>Products</span>
+                        <span><span class="dot green"></span>Services</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="percentage-info">
+                        <p><span class="increase">↑ 25%</span> Products</p>
+                        <p><span class="decrease">↓ 10%</span> Services</p>
+                    </div>
+                </div>
+
+
+                <!-- Right chart card -->
+                <div class="card">
+                    <h3>Chart By %</h3>
+                    <div class="legend">
+                        <span><span class="dot blue"></span>Products</span>
+                        <span><span class="dot red"></span>Services</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                </div>
+
+
+        </section>
+
+
+
+
 
 
 
     </section>
+
+
     <!-- ====================================hero================================================= -->
     <section>
-     
+
 
     </section>
+    <script src="./index.js"></script>
 
     <script src="./show.js"></script>
     <script src="./insert.js"></script>
-    <script src="./index.js"></script>
 </body>
 
 </html>
