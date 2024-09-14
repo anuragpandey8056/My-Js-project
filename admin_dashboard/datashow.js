@@ -44,7 +44,7 @@ async function show() {
             
         
 
-        </tr>;`
+        </tr>`
 
     let Url = "http://localhost:3000/registration";
     let myobj = await fetch(Url);
@@ -58,7 +58,7 @@ async function show() {
             <td id="password-${key.id}">${key.password}  </td>
            
 
-        </tr>`;
+        </tr>`
 
 
 
@@ -69,7 +69,7 @@ async function show() {
         // <td id="save-${key.id}"><i  onclick="saveRow('${key.id}')"  class="fa-solid fa-floppy-disk"></i> </td>
     });
 
-    My_table +=`</table>;` 
+    My_table +=`</table>` 
     let two = document.getElementById("show3");
 
     two.innerHTML = My_table;
