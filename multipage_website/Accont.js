@@ -12,7 +12,7 @@ function run1(){
 
     if(email == converteddata.email && pass ==converteddata.cpass){
         alert("login succesfully Welcome ")
-        window.open("../admin_dashboard/admin.html")
+        window.open("./index.html")
     }
     else{
         alert("wrong pass")

@@ -135,34 +135,6 @@
     font-size: 32px; 
 }
 
-#table{
-    td{
-        padding: 10px 10px 10px 10px;
-       
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -173,31 +145,29 @@ h1 {
     margin: 20px 0;
     color: #444;
 }
+
 #centered-container {
-    overflow-x: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Aligns the table at the top */
-     height: auto; /*Remove fixed height to avoid extra space */
-    width: 150%;  
-    margin-top: 0; /* Ensure no top margin */
-    padding-top: 0; /* Remove padding */
+    align-items: center;
+    width: 100%;
+    padding: 120px;
 }
 
 table {
-    width: 100%;
-    height: auto; /* Adjust height as needed */
-    margin-top: 0; /* Ensure no top margin */
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
-    overflow-x: hidden;
+    overflow-x: auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-
 th, td {
-    padding: 20px 23px;
+    padding: 15px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
@@ -205,24 +175,25 @@ th, td {
 th {
     background-color: rgb(66, 126, 154);
     color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     font-size: 14px;
-}
-
-td {
-    font-size: 13px;
-    color: #333;
 }
 
 tr:hover {
     background-color: #f1f1f1;
 }
 
+
 i {
     cursor: pointer;
     color: #3498db;
     transition: color 0.3s ease;
+}
+input {
+    width: 90%;  
+    padding:12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 i:hover {

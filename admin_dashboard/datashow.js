@@ -2,6 +2,9 @@ function editRow(id) {
     document.getElementById(`id-${id}`).removeAttribute('readonly');
     document.getElementById(`nm-${id}`).removeAttribute('readonly');
     document.getElementById(`email-${id}`).removeAttribute('readonly');
+    document.getElementById(`rollno-${id}`).removeAttribute('readonly');
+    document.getElementById(`dept-${id}`).removeAttribute('readonly');
+
     document.getElementById(`password-${id}`).removeAttribute('readonly');
 
     
@@ -40,6 +43,8 @@ async function show() {
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Roll-No</th>
+            <th>Department</th>
             <th>password</th>
             
         
@@ -55,6 +60,9 @@ async function show() {
             <td id="id-${key.id}"> ${key.id}  </td>
             <td id="nm-${key.id}"> ${key.name} </td>
             <td  id="email-${key.id}">${key.Email} </td>
+            <td  id="rollno-${key.id}">${key.rollno} </td>
+            <td  id="dept-${key.id}">${key.department} </td>
+
             <td id="password-${key.id}">${key.password}  </td>
            
 

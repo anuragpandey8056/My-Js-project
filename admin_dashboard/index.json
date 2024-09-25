@@ -4,37 +4,49 @@
       "id": "e645",
       "name": "nitin",
       "Email": "nitin@gmail.com",
+      "rollno": 322157,
+      "department": "cs",
       "password": "7856"
     },
     {
       "id": "71b1",
       "name": "udhav",
       "Email": "udhav@gmail.com",
+      "rollno": 322157,
+      "department": "maths",
       "password": "2536"
     },
     {
       "id": "5863",
       "name": "shivam",
       "Email": "piyus@gmail.com",
+      "rollno": 322157,
+      "department": "physics",
       "password": "589645"
-    },
-    {
-      "id": "371a",
-      "name": "anuragpandey",
-      "Email": "anurag@gmail.com",
-      "password": "1488"
     },
     {
       "id": "05fb",
       "name": "kapil",
       "Email": "kapil@gmail.com",
+      "rollno": 322157,
+      "department": "bio",
       "password": "14526"
     },
     {
       "id": "980f",
       "name": "kapil",
       "Email": "kapil@gmail.com",
-      "password": "14526"
+      "rollno": "322157",
+      "department": "botany",
+      "password": "145258"
+    },
+    {
+      "id": "9907",
+      "name": "harish",
+      "Email": "harish@gmail.com",
+      "rollno": "8569",
+      "department": "food",
+      "password": "2589"
     }
   ]
 }

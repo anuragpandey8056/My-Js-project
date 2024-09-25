@@ -4,7 +4,10 @@ async function show() {
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
+          <th>rollno</th>
+          <th>department</th>
           <th>Password</th>
+
           <th>Edit</th>
           <th>Delete/save</th>
           
@@ -19,6 +22,9 @@ async function show() {
           <td><input id="id-${key.id}" value="${key.id}" readonly></td>
           <td><input id="nm-${key.id}" value="${key.name}" readonly></td>
           <td><input id="email-${key.id}" value="${key.Email}" readonly></td>
+          <td><input id="rollno-${key.id}" value="${key.rollno}" readonly></td>
+          <td><input id="dept-${key.id}" value="${key.department}" readonly></td>
+
           <td><input id="password-${key.id}" value="${key.password}" readonly></td>
           <td id="edit-${key.id}">
               <i onclick="editRow('${key.id}')" class="fa-regular fa-pen-to-square"></i>
@@ -50,6 +56,9 @@ function saveRow(id) {
   let myid = document.getElementById(`id-${id}`).value;
   let myname = document.getElementById(`nm-${id}`).value;
   let myemail = document.getElementById(`email-${id}`).value;
+  let roll = document.getElementById(`rollno-${id}`).value;
+  let dept = document.getElementById(`dept-${id}`).value;
+
   let mypassword = document.getElementById(`password-${id}`).value;
 
   let url = `http://localhost:3000/registration/${id}`;
@@ -59,6 +68,9 @@ function saveRow(id) {
           id: myid,
           name: myname,
           Email: myemail,
+          rollno: roll,
+          department:dept ,
+
           password: mypassword
       }),
       headers: {

@@ -10,6 +10,27 @@ let converteddata = JSON.parse(data);
 
 one.innerHTML = converteddata.name;
 
+// ================================================================================================================================
+
+
+function show3(){
+    let one = document.getElementById("showlog").style.display = "block"
+   
+
+}
+function logout(){
+     let two = document.getElementById("welcome")
+     window.localStorage.clear()
+    
+
+}
+
+
+
+
+
+// ===============================================================================================================================
+
 // =========================cards ======================
 // Line Chart
 const ctxLine = document.getElementById('lineChart').getContext('2d');

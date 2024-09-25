@@ -3,6 +3,9 @@ async function insert(e) {
     try {
         let myname = document.getElementById("name").value;
         let myemail = document.getElementById("email").value;
+        let roll = document.getElementById("rollno").value;
+        let dept= document.getElementById("dept").value;
+
         let mypassword = document.getElementById("password").value;
 
         if(myname== " " || myemail ==""||mypassword ==""){
@@ -18,7 +21,9 @@ async function insert(e) {
                 body: JSON.stringify({
                     name: myname,
                     Email: myemail,
-                    password: mypassword
+                    rollno:roll,
+                    department:dept,
+                    password: mypassword,
     
                 }),
                 headers:{

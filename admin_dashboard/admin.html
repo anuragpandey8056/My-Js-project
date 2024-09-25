@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin-dadhboard</title>
     <link rel="stylesheet" href="./index.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,6 +16,16 @@
 </style>
 
 <body>
+    <div id="showlog">
+
+        <li> <a href="">activity</a></li>
+        <li><a href="../multipage_website/Accont.html">Login</a></li>
+        <li><a href="../multipage_website/Register.html">Register</a></li>
+        <li onclick="logout()"><a href="../multipage_website/Register.html">logout</a></li>
+
+
+    </div>
+
     <section id="first">
         <aside id="cool-admin">
             <div style="margin-inline-start: 0px;">
@@ -50,16 +60,26 @@
             </div>
         </div>
 
-        <div>
+        <div onclick="show3()">
             <i style="font-size: 20px;" class="fa-solid fa-list"></i>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
 
     <section id="asid">
         <div id="div1">
             <aside>
                 <div><i class="fa-solid fa-gauge"></i></div>
-                <div><a href="../multipage_website/index.html">Home</a></div>
+                <div><a href="#">Home</a></div>
             </aside>
             <aside>
                 <div><i class="fa-solid fa-chart-simple"></i></div>
@@ -87,18 +107,14 @@
             </aside>
             <aside>
                 <div><i class="fa-solid fa-pager"></i></div>
-                <div><a href="">Pages</a></div>
+                <div><a href="../multipage_website/index.html">Pages</a></div>
             </aside>
             <aside>
                 <div><i class="fa-brands fa-uikit"></i></div>
                 <div><a href="">UI Elements</a></div>
             </aside>
         </div>
-        <!-- 
-        <div id="centered-container">
-            <h1 id="show"></h1>
-
-        </div> -->
+       <!-- ====================================================== -->
         <section>
             <div id="div2">
                 <div id="card1">
