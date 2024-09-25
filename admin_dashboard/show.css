@@ -282,7 +282,7 @@ i:hover {
     }
 }
 
-/* Very Small Screens (Mobile) */
+ /* Very Small Screens  */
 @media (max-width: 480px) {
     #search-bar input {
         font-size: 14px;

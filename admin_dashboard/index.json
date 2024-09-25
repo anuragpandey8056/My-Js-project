@@ -20,25 +20,9 @@
       "id": "5863",
       "name": "shivam",
       "Email": "piyus@gmail.com",
-      "rollno": 322157,
-      "department": "physics",
-      "password": "589645"
-    },
-    {
-      "id": "05fb",
-      "name": "kapil",
-      "Email": "kapil@gmail.com",
-      "rollno": 322157,
-      "department": "bio",
-      "password": "14526"
-    },
-    {
-      "id": "980f",
-      "name": "kapil",
-      "Email": "kapil@gmail.com",
       "rollno": "322157",
-      "department": "botany",
-      "password": "145258"
+      "department": "physics",
+      "password": "2563"
     },
     {
       "id": "9907",
@@ -47,6 +31,14 @@
       "rollno": "8569",
       "department": "food",
       "password": "2589"
+    },
+    {
+      "id": "b162",
+      "name": "anurag",
+      "Email": "anuragpandey8056@gmail.com",
+      "rollno": "2563",
+      "department": "bio",
+      "password": "25698"
     }
   ]
 }

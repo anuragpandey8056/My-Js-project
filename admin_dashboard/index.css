@@ -261,9 +261,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 400px;
-    /* Increase card width */
     height: 300px;
-    /* Increase card height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -316,10 +314,10 @@
     color: red;
 }
 
-/* Chart container styling */
+
 .chart-container {
     height: 220px;
-    /* Adjust the height of the chart container */
+   
     position: relative;
 }
 
@@ -363,22 +361,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Aligns the table at the top */
+   
     height: auto;
-    /*Remove fixed height to avoid extra space */
     width: 150%;
     margin-top: 0;
-    /* Ensure no top margin */
     padding-top: 0;
-    /* Remove padding */
 }
 
 table {
     width: 100%;
     height: auto;
-    /* Adjust height as needed */
     margin-top: 0;
-    /* Ensure no top margin */
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
@@ -462,7 +455,6 @@ i:hover {
     }
 }
 
-/* Small Screens and Phones */
 @media (max-width: 768px) {
     #div2 {
         flex-direction: column;
@@ -509,7 +501,6 @@ i:hover {
     }
 }
 
-/* Very Small Screens (Mobile) */
 @media (max-width: 480px) {
     #search-bar input {
         font-size: 14px;

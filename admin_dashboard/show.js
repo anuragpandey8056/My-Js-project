@@ -48,8 +48,8 @@ function editRow(id) {
   document.getElementById(`email-${id}`).removeAttribute('readonly');
   document.getElementById(`password-${id}`).removeAttribute('readonly');
 
-  document.getElementById(`edit-${id}`).style.display = "none"; // Hide edit button
-  document.getElementById(`save-${id}`).style.display = "inline"; // Show save button
+  document.getElementById(`edit-${id}`).style.display = "none"; 
+  document.getElementById(`save-${id}`).style.display = "inline";                                                                                       
 }
 
 function saveRow(id) {
@@ -80,7 +80,7 @@ function saveRow(id) {
       .then((response) => {
           if (response.ok) {
               alert("Data updated successfully");
-              show(); // Refresh the table
+              show(); 
           } else {
               throw new Error("Error while updating");
           }
@@ -98,7 +98,7 @@ function myrecordRemove(id) {
       .then((response) => {
           if (response.ok) {
               alert("Record deleted");
-              show(); // Refresh the table after deletion
+              show(); 
           } else {
               throw new Error('Error');
           }
@@ -108,4 +108,4 @@ function myrecordRemove(id) {
       });
 }
 
-show(); // Initial call to show the data
+show(); 
