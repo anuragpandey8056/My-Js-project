@@ -155,7 +155,7 @@ html {
     grid-template-columns: auto auto;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   #logos {
     display: grid;
     grid-template-columns: auto;
@@ -170,6 +170,7 @@ html {
   .mainnav {
     display: block;
     margin-left: -400px;
+    z-index: 100;
   }
   .mainnav li ul {
     display: block;
@@ -190,12 +191,18 @@ html {
     width: 40%;
     height: 100%;
     color: red;
-    z-index: 10000;
+    z-index: 100;
   }
   #center {
     position: absolute;
     top: 300px;
     right: 200px;
+  }
+  #center{
+    div{
+      z-index: 0;
+
+    }
   }
 }
 
