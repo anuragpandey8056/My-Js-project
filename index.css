@@ -160,6 +160,43 @@ html {
     display: grid;
     grid-template-columns: auto;
   }
+  #bar {
+    display: block;
+    color: rgb(232, 232, 64);
+  }
+  .mainnav li a {
+    color: black;
+  }
+  .mainnav {
+    display: block;
+    margin-left: -400px;
+  }
+  .mainnav li ul {
+    display: block;
+  }
+  .mainnav li img {
+    display: none;
+  }
+  .mainnav li a {
+    display: block;
+  }
+  .mainnav li ul li {
+    color: black;
+  }
+  #cha:checked ~ .mainnav {
+    margin-left: 0px;
+    transition: margin-left 1.5s;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    color: red;
+    z-index: 10000;
+  }
+  #center {
+    position: absolute;
+    top: 300px;
+    right: 200px;
+  }
 }
 
 #image {
