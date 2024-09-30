@@ -161,6 +161,7 @@ html {
     grid-template-columns: auto;
   }
 }
+
 #image {
   overflow-x: hidden;
 }
